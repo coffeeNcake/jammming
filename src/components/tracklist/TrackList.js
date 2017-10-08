@@ -4,6 +4,7 @@ import Track from '../track/Track';
 
 class TrackList extends React.Component {
   render() {
+    console.log('Here are your props: ' +this.props);
     return (
       <div className="TrackList">
           {

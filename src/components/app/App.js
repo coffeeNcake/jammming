@@ -13,9 +13,7 @@ class App extends Component {
         {name: 'Pieces', artist: 'Rob Thomas', album: 'The Great Unknown'},
         {name: 'Hold On Forever', artist: 'Rob Thomas', album: 'The Great Unknown'},
         {name: 'Little Wonders', artist: 'Rob Thomas', album: 'Little Wonders'},
-      ]};
-
-    this.state = {
+      ],
       playlistName: 'Listen N Relax',
       playlistTracks: [
         {name: 'Still Waiting', artist: 'Tom Chaplin', album: 'The Wave'},
@@ -23,6 +21,7 @@ class App extends Component {
       ]
     };
 
+    console.log('App - props: ' + this.props);
     this.addTrack = this.addTrack.bind(this);
     this.removeTrack = this.removeTrack.bind(this);
   }
@@ -30,6 +29,7 @@ class App extends Component {
   // Add a song to playlist
   addTrack(track) {
     const isOnPlaylist = this.state.playlistTracks.includes(track.id);
+    console.log('addTrack: ' + this.state.playlistTracks)
     if (!isOnPlaylist) {
       this.state.playlistTracks.push(track);
       this.setState({playlistTracks: this.state.playlistTracks})
