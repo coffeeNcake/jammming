@@ -4,11 +4,12 @@ import TrackList from '../tracklist/TrackList';
 
 class SearchResults extends React.Component {
   render() {
-    console.log('SearchResults - props:' + this.props);
     return (
       <div className="SearchResults">
         <h2>Results</h2>
-        <TrackList tracks={this.props.searchResults} onAdd={this.props.onAdd} />
+        <TrackList tracks={this.props.searchResults}
+          onAdd={this.props.onAdd}
+          onRemove={this.props.onRemove} />
       </div>
     );
   }

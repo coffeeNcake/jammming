@@ -1,5 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+## jammming project
+
+React Web Application that allows users to search the Spotify library, create custom playlists and save it to their Shopify account.
+
+1.	Search by song, artist or album.
+2.	Add songs to the playlist.  Do not allow duplicate songs in the playlist.
+3.	Remove songs from the playlist.
+4.	Save a playlist to the user’s Spotify account.
+5.	Update the playlist name.
+
+Notes for the reviewer:
+* Sign-On to Spotify:
+  * If you are signed on to Spotify or have your password is cached, the first time you search it will go to retrieve your access token.  You will need to enter your search criteria again.
+  * If are not signed on to Spotify, it will prompt you to sign-on.  You will also need to enter your search criteria again.
+  * This behavior was identical to the demo website supplied.
+* When your playlist is saved to Spotify, the search results and playlist name are reset and the playlist tracks remain.
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
@@ -283,7 +300,7 @@ In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and s
 
 Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
 
-The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
+The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine.
 
 ## Formatting Code Automatically
 
@@ -1769,7 +1786,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
