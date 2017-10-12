@@ -17,6 +17,7 @@ Notes for the reviewer:
   * This behavior was identical to the demo website supplied.
 * When your playlist is saved to Spotify, the search results and playlist name are reset and the playlist tracks remain.
 
+##
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
