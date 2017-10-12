@@ -74,7 +74,7 @@ const Spotify = {
       }, networkError => {
         console.log(networkError.message);
       }).then(jsonResponse => {
-        console.log('jsonResponse UserId: ' + jsonResponse);
+        // console.log('jsonResponse UserId: ' + jsonResponse);
         userId = jsonResponse.id;
 
         // Create playlist on user account
@@ -90,7 +90,7 @@ const Spotify = {
           }, networkError => {
             console.log(networkError.message);
           }).then(jsonResponse => {
-            console.log('Playlist Id: '+ jsonResponse.id);
+            //console.log('Playlist Id: '+ jsonResponse.id);
             const playlistId = jsonResponse.id;
 
             // Add tracks to the playlist
