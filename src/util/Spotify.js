@@ -1,5 +1,6 @@
 const clientId = 'b8ddbb4f11c5408ba668224584b35ff1';
 const redirectURI = 'http://localhost:3000/';
+// const redirectURI = 'http://jammming.surge.sh/';
 let accessToken;
 
 const Spotify = {
@@ -45,7 +46,8 @@ const Spotify = {
             name: track.name,
             artist: track.artists[0].name,
             album: track.album.name,
-            uri: track.uri
+            uri: track.uri,
+            albumimg: track.album.images[2].url
           }
         ))
       } else {
