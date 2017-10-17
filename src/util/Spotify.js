@@ -1,6 +1,6 @@
 const clientId = 'b8ddbb4f11c5408ba668224584b35ff1';
-const redirectURI = 'http://localhost:3000/';
-// const redirectURI = 'http://jammming.surge.sh/';
+//const redirectURI = 'http://localhost:3000/';
+const redirectURI = 'http://mountain_jam.surge.sh/';
 let accessToken;
 
 const Spotify = {
